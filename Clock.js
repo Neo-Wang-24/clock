@@ -43,11 +43,11 @@ var today = new Date();
 	//time zone buttons
     var Button1 = paper.rect(30,550,50,30);
 	Button1.attr({fill: "red"});
-	var buttontext = paper.text(55,560,"China");
+	var buttontext = paper.text(55,560,"UK");
 	buttontext.attr({fill:"#ffff80","font-size": 15});
 	Button1.click(function(){
 		
-		var display = paper.text(230, 560,  "Beijing:  " + (h+8)%24 + ":" + m );
+		var display = paper.text(230, 560,  "London:  " + (h-8)%24 + ":" + m );
 display.attr({fill:"yellow","font-size":"20"});
 	}); 
 	
@@ -57,7 +57,7 @@ display.attr({fill:"yellow","font-size":"20"});
 	buttontext.attr({"font-size": 15});
 	Button2.click(function(){
 		
-		var display = paper.text(230, 615,  "New York:  " + (h-5)%24 + ":" + m );
+		var display = paper.text(230, 615,  "New York:  " + (h-21)%24 + ":" + m );
 display.attr({fill:"#00ff55","font-size":"20"});
 	});
 	
@@ -67,7 +67,7 @@ display.attr({fill:"#00ff55","font-size":"20"});
 	buttontext.attr({"font-size": 15});
 	Button3.click(function(){
 		
-		var display = paper.text(230, 660,  "Paris:  " + (h-1)%24 + ":" + m );
+		var display = paper.text(230, 660,  "Paris:  " + (h-17)%24 + ":" + m );
 display.attr({fill:"#000080","font-size":"20"});
 	});
 	
