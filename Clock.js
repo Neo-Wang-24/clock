@@ -57,7 +57,7 @@ display.attr({fill:"yellow","font-size":"20"});
 	buttontext.attr({"font-size": 15});
 	Button2.click(function(){
 		
-		var display = paper.text(230, 615,  "New York:  " + (h-21)%24 + ":" + m );
+		var display = paper.text(230, 615,  "New York:  " + (h-12)%24 + ":" + m );
 display.attr({fill:"#00ff55","font-size":"20"});
 	});
 	
@@ -67,7 +67,7 @@ display.attr({fill:"#00ff55","font-size":"20"});
 	buttontext.attr({"font-size": 15});
 	Button3.click(function(){
 		
-		var display = paper.text(230, 660,  "Paris:  " + (h-17)%24 + ":" + m );
+		var display = paper.text(230, 660,  "Paris:  " + (h-6)%24 + ":" + m );
 display.attr({fill:"#000080","font-size":"20"});
 	});
 	
@@ -311,8 +311,10 @@ var Button13 = paper.rect(50,770,50,20);
    
     minutesHand.animate({transform: [ 'r',((m*6)+180+num2*6),250,250]});
 minutesHand1.animate({transform: [ 'r',((m*6)+180+num2*6),250,250]});
+	  
     hoursHand.animate({transform: [ 'r',((h*30)+180+num1*30)+(m/2),250,250]});
 	hoursHand1.animate({transform: [ 'r',((h*30)+180+num1*30)+(m/2),250,250]});
+	  
 display.attr({text: (h + num1)  % 12 + ":" + m + ":" + s+ ' ' + ampm,
 fill:"#778899","font-size":"20","font-family":"Arial Black"});
 display1.attr({text: (h + num1)  % 12 + ":" + m + ":" + s+ ' ' + ampm,
